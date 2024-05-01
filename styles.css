@@ -1,0 +1,102 @@
+
+*{
+    margin: 0;
+    font-family: poppins,sans-serif;
+    font-family:'Times New Roman', Times, serif;
+
+
+    
+}
+
+body{
+    background-color: #dee2e6;
+
+}
+header{
+    background-color: #2980b9;
+    margin-top: 0;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.navigationHeader ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.navigationHeader ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.secao_lateral{
+    background-color: #d8dfe4;
+    width: 225px;
+    height: 573px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: #c5ccd4;
+    padding: 20px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    width: 150px;
+    margin-top: 15px;
+    color: aliceblue;
+    text-align: center;
+    cursor: pointer;   
+}
+.main{
+     
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.conteudo_central{
+    display: flex;
+    
+    
+}
+
+.image{
+    width: 500px;
+}
+
+p{
+    width: 300px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo{
+    width: 400px;
+}
+
+.box.active {
+    background-color:#2980b9;
+    color: white;
+}
+
+/* Mantenha os estilos existentes */
+
+/* Estilos para a barra lateral *
+

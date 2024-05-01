@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quadrado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="area_quadrado">
+            <p>Para calcular a área do seu cubo, utilize a fórmula: (6 x Base x Base²):</p>
+            <img src="/imagens/quadrado.png" alt="quadrado">
+        </div>
+
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="lado"><strong>Base</strong></label>
+                    <input type="number" name="base" id="base">
+                </div>
+
+                <div class="campo">
+                    <label for="resultado"><strong>A área do seu cubo é:</strong></label>
+                    <input type="number" name="resultado" id="resultado" >
+                </div>
+                <button type="button" onclick="calculo_area(event)" class="botao">Calcular Área</button>
+            </fieldset>
+        </form>
+    </div>
+    
+    <script>
+        function calculo_area(event) {
+            event.preventDefault();
+            var base = parseFloat(document.getElementById('base').value);
+            var area = 6 * base * base;
+            document.getElementById('resultado').value = area;
+        }
+    </script>
+</body>
+</html>

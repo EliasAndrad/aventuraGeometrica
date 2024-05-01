@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cuboide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <body>
+
+        
+       
+
+        <div class="container">
+
+        
+            <div class="area_cuboide">
+                <p>Calcule a area do seu cuboide</p>
+                <img src="/imagens/cuboide.png" alt="cuboide">
+
+            </div>
+
+
+            <form>
+                <fieldset class="grupo">
+                    <div class=" campo">
+                        <label for="lado"><strong>largura</strong></label>
+                        <input type="number" name="largura" id="largura">
+                    </div>
+
+                    <div class="campo">
+                        <label for="altura"><strong>altura</strong></label>
+                        <input type="number" name="altura" id="altura">
+                    </div>
+
+                    <div class="campo">
+                        <label for="comprimento"><strong>comprimento</strong></label>
+                        <input type="number" name="comprimento" id="comprimento">
+                    </div>
+
+                    <div class="campo">
+                        <label for="resultado"><strong>A area total do seu cuboide é: </strong></label>
+                        <input type="number" name="resultado" id="resultado" readonly>
+                    </div>
+                    <button type="button" onclick="calculo_area(event)" class="botao"> calcular Area</button>
+
+                </fieldset>
+
+
+            </form>
+        <div>
+        
+        <script>
+
+            function calculo_area(event){
+                event.preventDefault();
+                var comprimento = parseFloat(document.getElementById('comprimento').value);
+                var altura = parseFloat(document.getElementById('altura').value);
+                var largura = parseFloat(document.getElementById('largura').value);
+
+
+                var area =  2 * (comprimento * altura) + 2 * (altura * largura) + 2 * (largura * comprimento)
+
+                document.getElementById('resultado').value = area;
+                
+            }
+
+        </script>
+
+
+    </body>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quadrado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <body>
+
+        
+        
+
+        <div class="container">
+
+        
+            <div class="area_quadrado">
+                <p>para calcular a area de um quadrado multiplique o valor da sua base pela sua altura: </p>
+                <img src="/imagens/area-quadrados.png" alt="quadrado">
+
+            </div>
+
+
+            <form>
+                <fieldset class="grupo">
+                    <div class=" campo">
+                        <label for="lado"><strong>Base</strong></label>
+                        <input type="number" name="base" id="base">
+                    </div>
+
+                    <div class="campo">
+                        <label for="altura"><strong>altura</strong></label>
+                        <input type="number" name="altura" id="altura">
+                    </div>
+
+                    <div class="campo">
+                        <label for="resultado"><strong>A area do seu quadrado é: </strong></label>
+                        <input type="number" name="resultado" id="resultado" readonly>
+                    </div>
+                    <button type="button" onclick="calculo_area(event)" class="botao"> calcular Area</button>
+
+                </fieldset>
+
+
+            </form>
+        <div>
+        
+        <script>
+
+            function calculo_area(event){
+                event.preventDefault();
+                var base = parseFloat(document.getElementById('base').value);
+                var altura = parseFloat(document.getElementById('altura').value);
+
+                var area = base * altura;
+
+                document.getElementById('resultado').value = area;
+                
+            }
+
+        </script>
+
+
+    </body>
+</body>
+</html>

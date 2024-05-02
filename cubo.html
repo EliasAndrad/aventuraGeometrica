@@ -25,18 +25,13 @@
                     <label for="resultado"><strong>A área do seu cubo é:</strong></label>
                     <input type="number" name="resultado" id="resultado" >
                 </div>
-                <button type="button" onclick="calculo_area(event)" class="botao">Calcular Área</button>
+                <button type="button" onclick="calculoAreaCubo()" class="botao">Calcular Área</button>
             </fieldset>
         </form>
     </div>
     
     <script>
-        function calculo_area(event) {
-            event.preventDefault();
-            var base = parseFloat(document.getElementById('base').value);
-            var area = 6 * base * base;
-            document.getElementById('resultado').value = area;
-        }
+        
     </script>
 </body>
 </html>

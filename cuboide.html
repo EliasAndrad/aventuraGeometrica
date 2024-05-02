@@ -44,7 +44,7 @@
                         <label for="resultado"><strong>A area total do seu cuboide é: </strong></label>
                         <input type="number" name="resultado" id="resultado" readonly>
                     </div>
-                    <button type="button" onclick="calculo_area(event)" class="botao"> calcular Area</button>
+                    <button type="button" onclick="calculoAreaCuboide()" class="botao"> calcular Area</button>
 
                 </fieldset>
 
@@ -54,19 +54,7 @@
         
         <script>
 
-            function calculo_area(event){
-                event.preventDefault();
-                var comprimento = parseFloat(document.getElementById('comprimento').value);
-                var altura = parseFloat(document.getElementById('altura').value);
-                var largura = parseFloat(document.getElementById('largura').value);
-
-
-                var area =  2 * (comprimento * altura) + 2 * (altura * largura) + 2 * (largura * comprimento)
-
-                document.getElementById('resultado').value = area;
-                
-            }
-
+            
         </script>
 
 

@@ -39,7 +39,7 @@
                         <label for="resultado"><strong>A area do seu quadrado é: </strong></label>
                         <input type="number" name="resultado" id="resultado" readonly>
                     </div>
-                    <button type="button" onclick="calculo_area(event)" class="botao"> calcular Area</button>
+                    <button type="button" onclick="calculoAreaQuadrado()" class="botao"> calcular Area</button>
 
                 </fieldset>
 
@@ -49,16 +49,6 @@
         
         <script>
 
-            function calculo_area(event){
-                event.preventDefault();
-                var base = parseFloat(document.getElementById('base').value);
-                var altura = parseFloat(document.getElementById('altura').value);
-
-                var area = base * altura;
-
-                document.getElementById('resultado').value = area;
-                
-            }
 
         </script>
 
